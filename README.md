@@ -1,13 +1,19 @@
-# generator-react-native-testable [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+# Testable React Native Project Generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+>
+
+Painless react-native project setup, with redux and unit tests already set up and ready to run.
+
+Adds support for:
+ - [Redux](http://redux.js.org/) and [Redux-Thunk](https://github.com/gaearon/redux-thunk) application state management.
+ - [Enzyme](http://airbnb.io/enzyme/docs/guides/react-native.html) for deep rendering of Components directly in tests.
+ - Example tests of the above.
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-react-native-testable using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and `generator-react-native-testable` using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-npm install -g yo
-npm install -g generator-react-native-testable
+npm install -g yo generator-react-native-testable
 ```
 
 Then generate your new project:
@@ -15,6 +21,8 @@ Then generate your new project:
 ```bash
 yo react-native-testable --force
 ```
+
+That's all!  After you `cd` into the project directory you can `npm test` to run unit tests, or `react-native run-android` or `react-native run-ios` to run the project.
 
 ## Getting To Know Yeoman
 
