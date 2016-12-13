@@ -5,7 +5,7 @@ Painless react-native project setup, with redux and unit tests already set up an
 
 Adds support for:
  - [Redux](http://redux.js.org/) and [Redux-Thunk](https://github.com/gaearon/redux-thunk) application state management.
- - [Enzyme](http://airbnb.io/enzyme/docs/guides/react-native.html) for deep rendering of Components directly in tests.
+ - [Enzyme](http://airbnb.io/enzyme/docs/guides/react-native.html) and and [jsdom](https://www.npmjs.com/package/jsdom) for deep rendering of Components directly in tests.
  - Example tests of the above.
 
 ## Installation
