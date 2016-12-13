@@ -1,5 +1,5 @@
 {
-  "name": "generator-react-native-redux-enzyme",
+  "name": "generator-react-native-testable",
   "version": "0.0.1",
   "description": "",
   "homepage": "http://github.com/connected-lab",
@@ -42,7 +42,7 @@
       "mocha": true
     }
   },
-  "repository": "Connected-Lab/generator-react-native-redux-enzyme-jsdom",
+  "repository": "Connected-Lab/generator-react-native-testable",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

@@ -9,7 +9,7 @@ module.exports = yeoman.Base.extend({
 
         // Have Yeoman greet the user.
         this.log(yosay(
-            'Welcome to the finest ' + chalk.red('generator-react-native-redux-enzyme-jsdom') + ' generator!'
+            'Welcome to the finest ' + chalk.red('React Native Project') + ' generator!'
         ));
 
         var prompts = [{
