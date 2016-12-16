@@ -5,7 +5,7 @@ var packageJsonPath = process.argv[2];
 var obj = {
 	"preset": "jest-react-native",
 	"setupFiles": [
-		path.join("test-utils","jsdom.js")
+		path.join("./test-utils","jsdom.js")
 	]
 }
 fs.readFile(path.join(packageJsonPath, 'package.json'), 'utf-8', function (err, data) {
