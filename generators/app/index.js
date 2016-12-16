@@ -92,7 +92,7 @@ let addJestSetupFiles = (packageJsonPath, cb) => {
     let obj = {
         "preset": "jest-react-native",
         "setupFiles": [
-            path.join("test-utils","jsdom.js")
+            path.join("./test-utils","jsdom.js")
         ]
     };
     fs.readFile(packageJsonPath, 'utf-8', function (err, data) {
@@ -106,8 +106,8 @@ let addJestSetupFiles = (packageJsonPath, cb) => {
             if (!data.jest.setupFiles) {
                 data.jest.setupFiles = obj.setupFiles;
             } else {
-                if (data.jest.setupFiles.indexOf("test-utils/jsdom.js") == -1) {
-                    data.jest.setupFiles.push("test-utils/jsdom.js");
+                if (data.jest.setupFiles.indexOf("./test-utils/jsdom.js") == -1) {
+                    data.jest.setupFiles.push("./test-utils/jsdom.js");
                 }
             }
         }
