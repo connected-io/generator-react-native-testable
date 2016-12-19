@@ -20,6 +20,8 @@ Then generate your new project:
 
 ```bash
 yo react-native-testable --force
+cd YourProjectName
+npm install
 ```
 
 That's all!  After you `cd` into the project directory you can `npm test` to run unit tests, or `react-native run-android` or `react-native run-ios` to run the project.
