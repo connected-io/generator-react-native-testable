@@ -88,11 +88,10 @@ module.exports = yeoman.Base.extend({
 
 let addJestSetupFiles = (packageJsonPath, cb) => {
     let fs = require('fs');
-    let path = require('path')
     let obj = {
         "preset": "jest-react-native",
         "setupFiles": [
-            path.join("./test-utils","jsdom.js")
+            "./test-utils/jsdom.js"
         ]
     };
     fs.readFile(packageJsonPath, 'utf-8', function (err, data) {
